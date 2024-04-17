@@ -2,10 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <title>큰손pick</title>    
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <script src="js/swiper.min.js"></script>
 </head>
 <body>
-    
+    <style>
+        .pos1_list{margin:2rem 0.5rem 3rem;overflow: visible !important;}
+.pos1_list>ul:after{content:'';display:block;clear:both}
+.pos1_list>ul>li{position:relative;float:left;width:17rem;height:17rem;margin-left:1rem;border-radius: 1rem; background:#fff;box-shadow: 0 0.2rem 1rem 0 rgba(0,0,0,0.1);overflow:hidden}
+.pos1_list>ul>li:first-child{margin-left:0}  
+.pos1_list>ul>li:last-child{margin-right:0}
+
+.pos1_item{display:block;padding:1.6rem 1.4rem;text-align:left}
+.pos1_img{position:absolute;top:1.6rem;left:1.4rem;width:3rem;height:3rem;background: #fff;border: 1px solid #E0E0E0;border-radius:3rem}
+
+.pos1_item>*{display:block;overflow:hidden;color: #000;}
+.pos1_item>.pos1_tx1{font-size:1.4rem;line-height:2rem;height:4rem;margin:3.6rem 0 1.6rem}
+.pos1_item>.pos1_tx2{font-size:1.6rem;line-height:2.2rem;height:2.2rem;text-overflow:ellipsis;white-space: nowrap;}
+.pos1_item>.pos1_tx3{display:flex;font-size:1.4rem;letter-spacing: -1px;line-height:2rem;height:2rem;color: #D73838;margin-top:0.4rem;text-overflow: ellipsis;white-space: nowrap}
+.pos1_item>.pos1_tx3>*:first-child{margin-right:0.5rem}
+
+    </style>
+    <div class="pos1_list swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <div class=""></div>
+                <i class="pos1_img"><img src="https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_417200.png"/></i>
+                <span>워렌버핏</span> 
+                <span>10년 이상을 볼 것이 아니면  10분도 그 주식을 갖고있지 마라.</span> 
+                <a href="javascript:void(0)" > 자세히 보기</a> 
+            </li>
+            <li class="swiper-slide">
+                <a href="javascript:void(0)" class="pos1_item">
+                    <i class="pos1_img"><img src="https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_457550.png" onerror="this.src='https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_etc.png'" alt="logo"/></i>
+                    <span class="pos1_tx1">우진엔텍</span>
+                    <span class="pos1_tx2 fB">21,200</span>
+                    <span class="pos1_tx3"><i>공모가 대비 </i><i class="fontSB">+300%</i></span>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="javascript:void(0)" class="pos1_item">
+                    <i class="pos1_img"><img src="https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_454910.png" onerror="this.src='https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_etc.png'" alt="logo"/></i>
+                    <span class="pos1_tx1">두산로보틱스</span>
+                    <span class="pos1_tx2 fB">51,400</span>
+                    <span class="pos1_tx3"><i>공모가 대비 </i><i class="fontSB">+98%</i></span>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="javascript:void(0)" class="pos1_item">
+                    <i class="pos1_img"><img src="https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_450080.png" onerror="this.src='https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_etc.png'" alt="logo"/></i>
+                    <span class="pos1_tx1">에코프로머티</span>
+                    <span class="pos1_tx2 fB">57,200</span>
+                    <span class="pos1_tx3"><i>공모가 대비 </i><i class="fontSB">+58%</i></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var pos1 = {
+            on:function(){
+                new Swiper('.pos1_list.swiper-container', {
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    spaceBetween: 0,
+                    resistanceRatio: 0
+                });
+            }
+        }
+        pos1.on();
+    </script>
+
+    <div style="font-family: '맑은 고딕';">워렌버핏</div>
+    <div style="font-family: 'Pretendard';">워렌버핏</div>
+    <div style="font-family: '돋움';">워렌버핏</div>
+    <div style="font-family: 'Arial';">워렌버핏</div>
 </body>
 </html>
