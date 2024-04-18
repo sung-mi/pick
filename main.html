@@ -17,9 +17,9 @@
 .mp_list>ul>li{position:relative;float:left;width:15rem;text-align:center}
 
 .mp_item{width:12.8rem;margin:0 auto;filter: blur(2px);}
-.mp_item>.mpi_img{position:relative;display:block}
+.mp_item>.mpi_img{position:relative;display:block;border-radius:12.8rem}
 .mp_item>.mpi_img>img{width:100%;position:relative;z-index:3;border-radius:13.4rem;box-sizing: border-box;}
-.mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_img_tx4{display:none}
+.mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_img_tx4,.mpi_more{display:none}
 .mp_item>.mpi_img_tx1{}
 .mp_item>.mpi_img_tx2{}
 .mp_item>.mpi_img_tx3{}
@@ -27,7 +27,7 @@
 .mp_item>.mpi_img_tx4>i{position: absolute;left: 50%;transform: translateX(-50%)}
 .mp_item>.mpi_tx1{display:none;margin-top:4rem;height: 3rem;position:relative}
 .mp_item>.mpi_tx1>i{display:block;white-space:nowrap; font-size: 3.4rem;line-height: 3rem;color:#fff;position: absolute;left: 50%;transform: translateX(-50%)}
-.mpi_more{font-size: 1.4rem;line-height: 2rem; color:#666;font-weight:500;}
+.mp_item>.mpi_more{font-size: 1.4rem;line-height: 2rem; color:#666;font-weight:500;}
 
 
 .mp_list>ul>li.swiper-slide-active{padding-top:4rem}
@@ -39,6 +39,7 @@
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mp_item>.mpi_img_tx3{display:block}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mp_item>.mpi_img_tx4{display:block}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_tx1{display:block}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_more{display:block}
 
 @keyframes rainbow {
     from {
@@ -86,7 +87,7 @@
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>마이클버리</i></span> 
                         <span class="mpi_img_tx4"><img src="img/main/img_tx4.png" alt=""/></span> 
-                        <a href="javascript:void(0)"> 자세히 보기</a> 
+                        <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
                 <li class="swiper-slide">
@@ -97,7 +98,7 @@
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>스텐리 드러켄밀러</i></span> 
                         <span class="mpi_img_tx4"><img src="img/main/img_tx4.png" alt=""/></span> 
-                        <a href="javascript:void(0)"> 자세히 보기</a> 
+                        <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
                 <li class="swiper-slide">
@@ -108,7 +109,7 @@
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>하워드 막스</i></span> 
                         <span class="mpi_img_tx4"><img src="img/main/img_tx4.png" alt=""/></span> 
-                        <a href="javascript:void(0)"> 자세히 보기</a> 
+                        <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
             </ul>
