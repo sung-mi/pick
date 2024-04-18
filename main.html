@@ -10,121 +10,135 @@
 </head>
 <body>
     <style>
-        .mpick_list{}
+        .mp_top{height:42.8rem;background: #16171A;padding-top:1rem}
+        .mp_list{}
+        .mp_list>ul{}
 .mp_list>ul:after{content:'';display:block;clear:both}
-.mp_list>ul>li{position:relative;float:left;width:17rem;margin-left:1rem;border-radius: 1rem; background:#fff;box-shadow: 0 0.2rem 1rem 0 rgba(0,0,0,0.1);overflow:hidden}
-.mp_list>ul>li:first-child{margin-left:0}  
-.mp_list>ul>li:last-child{margin-right:0}
+.mp_list>ul>li{position:relative;float:left;width:15rem;text-align:center}
 
-.mp_item{display:block;padding:1.6rem 1.4rem;text-align:left}
-.mp_img{position:absolute;top:1.6rem;left:1.4rem;width:3rem;height:3rem;background: #fff;border: 1px solid #E0E0E0;border-radius:3rem}
-
-.mp_item>*{display:block;overflow:hidden;color: #000;}
-.mp_item>.mpi_tx1{font-size: 3.4rem;line-height: 3rem;font-weight: 600;}
-.mp_item>.mpi_tx2{}
-
-.mp_item>.mpi_img1{}
+.mp_item{width:12.8rem;margin:0 auto;filter: blur(2px);}
+.mp_item>.mpi_img{position:relative;display:block}
+.mp_item>.mpi_img>img{width:100%;position:relative;z-index:3;border-radius:13.4rem;box-sizing: border-box;}
+.mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_img_tx4{display:none}
 .mp_item>.mpi_img_tx1{}
 .mp_item>.mpi_img_tx2{}
 .mp_item>.mpi_img_tx3{}
-.mp_item>.mpi_img_tx4{}
+.mp_item>.mpi_img_tx4{position:relative}
+.mp_item>.mpi_img_tx4>i{position: absolute;left: 50%;transform: translateX(-50%)}
+.mp_item>.mpi_tx1{display:none;margin-top:4rem;height: 3rem;position:relative}
+.mp_item>.mpi_tx1>i{display:block;white-space:nowrap; font-size: 3.4rem;line-height: 3rem;color:#fff;position: absolute;left: 50%;transform: translateX(-50%)}
+.mpi_more{font-size: 1.4rem;line-height: 2rem; color:#666;font-weight:500;}
+
+
+.mp_list>ul>li.swiper-slide-active{padding-top:4rem}
+.mp_list>ul>li.swiper-slide-active>.mp_item{width:15rem;filter:none;}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img::before{animation:1.6s infinite ease rainbow;content:'';display:block;background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%);position:absolute;z-index:1;top:-0.8rem;left:-0.8rem;width:calc(100% + 1.6rem);height:calc(100% + 1.6rem);border-radius:13.4rem}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img::after{content:'';display:block;background:#16171A;position:absolute;z-index:2;top:-0.6rem;left:-0.6rem;width:calc(100% + 1.2rem);height:calc(100% + 1.2rem);border-radius:13.4rem}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mp_item>.mpi_img_tx1{display:block}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mp_item>.mpi_img_tx2{display:block}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mp_item>.mpi_img_tx3{display:block}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mp_item>.mpi_img_tx4{display:block}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_tx1{display:block}
+
+@keyframes rainbow {
+    from {
+        background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%);
+        opacity:0.9
+    }
+    10% {
+        background-image:-webkit-linear-gradient(-65deg, #FAE365 5%, #D5FD00 25%, #85F3FB 60%, #E85F9E 80%);
+        opacity:0.8
+    }
+    65% {
+        background-image:-webkit-linear-gradient(-65deg, #E85F9E 5%, #FAE365 25%, #D5FD00 60%, #85F3FB 80%);
+        opacity:0.5
+    }
+    90% {
+        background-image:-webkit-linear-gradient(-65deg, #85F3FB 5%, #E85F9E 25%, #FAE365 60%, #D5FD00 80%);
+        opacity:0.7
+    }
+    to {
+        background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%);
+        opacity:0.9
+    }
+}
 
     </style>
-    <div class="mp_list swiper-container">
-        <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-                <div class="mp_item">
-                    <span class="mpi_img1"><img src="img/main/man.png"/></span>
-                    <span class="mpi_img_tx1"><img src="img/main/img_tx1.png"/></span>
-                    <span class="mpi_img_tx2"><img src="img/main/img_tx2.png"/></span>
-                    <span class="mpi_img_tx3"><img src="img/main/img_tx3.png"/></span>
-                    <span class="mpi_tx1">워렌버핏</span> 
-                    <span class="mpi_img_tx4"><img src="img/main/img_tx4.png"/></span> 
-                    <a href="javascript:void(0)"> 자세히 보기</a> 
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <div class="mp_item">
-                    <span class="mpi_img1"><img src="img/main/man.png"/></span>
-                    <span class="mpi_img_tx1"><img src="img/main/img_tx1.png"/></span>
-                    <span class="mpi_img_tx2"><img src="img/main/img_tx2.png"/></span>
-                    <span class="mpi_img_tx3"><img src="img/main/img_tx3.png"/></span>
-                    <span class="mpi_tx1">워렌버핏</span> 
-                    <span class="mpi_img_tx4"><img src="img/main/img_tx4.png"/></span> 
-                    <a href="javascript:void(0)"> 자세히 보기</a> 
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <div class="mp_item">
-                    <span class="mpi_img1"><img src="img/main/man.png"/></span>
-                    <span class="mpi_img_tx1"><img src="img/main/img_tx1.png"/></span>
-                    <span class="mpi_img_tx2"><img src="img/main/img_tx2.png"/></span>
-                    <span class="mpi_img_tx3"><img src="img/main/img_tx3.png"/></span>
-                    <span class="mpi_tx1">워렌버핏</span> 
-                    <span class="mpi_img_tx4"><img src="img/main/img_tx4.png"/></span> 
-                    <a href="javascript:void(0)"> 자세히 보기</a> 
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <div class="mp_item">
-                    <span class="mpi_img1"><img src="img/main/man.png"/></span>
-                    <span class="mpi_img_tx1"><img src="img/main/img_tx1.png"/></span>
-                    <span class="mpi_img_tx2"><img src="img/main/img_tx2.png"/></span>
-                    <span class="mpi_img_tx3"><img src="img/main/img_tx3.png"/></span>
-                    <span class="mpi_tx1">워렌버핏</span> 
-                    <span class="mpi_img_tx4"><img src="img/main/img_tx4.png"/></span> 
-                    <a href="javascript:void(0)"> 자세히 보기</a> 
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <a href="javascript:void(0)" class="pos1_item">
-                    <i class="pos1_img"><img src="https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_457550.png" onerror="this.src='https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_etc.png'" alt="logo"/></i>
-                    <span class="pos1_tx1">우진엔텍</span>
-                    <span class="pos1_tx2 fB">21,200</span>
-                    <span class="pos1_tx3"><i>공모가 대비 </i><i class="fontSB">+300%</i></span>
-                </a>
-            </li>
-            <li class="swiper-slide">
-                <a href="javascript:void(0)" class="pos1_item">
-                    <i class="pos1_img"><img src="https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_454910.png" onerror="this.src='https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_etc.png'" alt="logo"/></i>
-                    <span class="pos1_tx1">두산로보틱스</span>
-                    <span class="pos1_tx2 fB">51,400</span>
-                    <span class="pos1_tx3"><i>공모가 대비 </i><i class="fontSB">+98%</i></span>
-                </a>
-            </li>
-            <li class="swiper-slide">
-                <a href="javascript:void(0)" class="pos1_item">
-                    <i class="pos1_img"><img src="https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_450080.png" onerror="this.src='https://downloadcdn.nhqv.com/mts/ci/ss_img_ci_etc.png'" alt="logo"/></i>
-                    <span class="pos1_tx1">에코프로머티</span>
-                    <span class="pos1_tx2 fB">57,200</span>
-                    <span class="pos1_tx3"><i>공모가 대비 </i><i class="fontSB">+58%</i></span>
-                </a>
-            </li>
-        </ul>
+    <div class="mp_top">
+        <div class="mp_list swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="mp_item">
+                        <span class="mpi_img"><img src="img/main/man.png" alt=""/></span>
+                        <span class="mpi_img_tx1"><img src="img/main/img_tx1.png" alt=""/></span>
+                        <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
+                        <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
+                        <span class="mpi_tx1"><i>워렌버핏</i></span> 
+                        <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
+                        <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="mp_item">
+                        <span class="mpi_img"><img src="img/main/man.png" alt=""/></span>
+                        <span class="mpi_img_tx1"><img src="img/main/img_tx1.png" alt=""/></span>
+                        <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
+                        <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
+                        <span class="mpi_tx1"><i>마이클버리</i></span> 
+                        <span class="mpi_img_tx4"><img src="img/main/img_tx4.png" alt=""/></span> 
+                        <a href="javascript:void(0)"> 자세히 보기</a> 
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="mp_item">
+                        <span class="mpi_img"><img src="img/main/man.png" alt=""/></span>
+                        <span class="mpi_img_tx1"><img src="img/main/img_tx1.png" alt=""/></span>
+                        <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
+                        <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
+                        <span class="mpi_tx1"><i>스텐리 드러켄밀러</i></span> 
+                        <span class="mpi_img_tx4"><img src="img/main/img_tx4.png" alt=""/></span> 
+                        <a href="javascript:void(0)"> 자세히 보기</a> 
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="mp_item">
+                        <span class="mpi_img"><img src="img/main/man.png" alt=""/></span>
+                        <span class="mpi_img_tx1"><img src="img/main/img_tx1.png" alt=""/></span>
+                        <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
+                        <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
+                        <span class="mpi_tx1"><i>하워드 막스</i></span> 
+                        <span class="mpi_img_tx4"><img src="img/main/img_tx4.png" alt=""/></span> 
+                        <a href="javascript:void(0)"> 자세히 보기</a> 
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <script type="text/javascript">
         var mp = {
             on:function(){
-                new Swiper('.mp_list.swiper-container', {
+                new Swiper('.mp_list.swiper-container', {                    
                     effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-                   
-                    //freeMode: true,
-                    spaceBetween: 0,
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    loop : true,
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: -10,
+                        depth: 100,
+                        modifier: 1.5,
+                        slideShadows: true,
+                    },
+                    //freeMode: false,
+                    spaceBetween: 20,
                     resistanceRatio: 0
                 });
             }
         }
         mp.on();
     </script>
+    
 
 </body>
 </html>
