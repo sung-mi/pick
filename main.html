@@ -360,17 +360,18 @@
    
   <style>
    .mp_note{display:flex;height: 3.4rem;justify-content: space-between;align-items: center;background-color:#F9F9F9}
-  .ico_i{width:1.4rem;height:1.4rem;display:inline-flex;background:url(img/main/ico_i.png) 0 0 no-repeat;background-size:100% auto}
-  .mp_note_tx{font-size: 1.2rem;
-font-weight: 400;color:#666}
+   .mp_note>*{display:inline-flex;align-items: center;}
+   .ico_i{width:1.4rem;height:1.4rem;display:inline-flex;background:url(img/main/ico_i.png) 0 0 no-repeat;background-size:100% auto}
+  .mp_note_tx{font-size: 1.2rem;line-height: 1.5rem;height: 1.4rem;margin-left: 0.4rem;font-weight: 400;color:#666}
+  .mp_note_more{width:1.6rem;height:1.6rem;background:url(img/main/ico_arw_r.png) 0 0 no-repeat;background-size:100% auto}
   </style>
     <section class="sticky_bottom">
-        <div class="mp_note">
+        <div class="mp_note padd">
             <span>
                 <i class="ico_i"></i>
                 <i class="mp_note_tx">유의사항</i>
             </span>
-            <a href="javascript:void(0)">s</a>
+            <a class="mp_note_more" href="javascript:void(0)"></a>
         </div>
 
         <a href="javascript:void(0)" class="mp_btn_order bgc_nm">큰손 PICK 일괄주문</a>
