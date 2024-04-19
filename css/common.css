@@ -3,14 +3,14 @@ html{font-size:2.76vw;-ms-overflow-style: scrollbar;-webkit-tap-highlight-color:
 @media (min-width:541px){html{font-size:10px}}
 body{line-height:1.437}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input
-{box-sizing:border-box;line-height:inherit;margin:0;padding:0;border:0;color:#111;font-family:'Pretendard Variable', sans-serif;letter-spacing:0;vertical-align:baseline}
+{box-sizing:border-box;line-height:inherit;margin:0;padding:0;border:0;color:#111;font-family:'PretendardR',sans-serif;letter-spacing:0;vertical-align:baseline}
 body,input,select,div,textarea,table,button,pre{letter-spacing:0}
 
 fieldset,img{border:0 none}
 dl,ul,ol,menu,li{list-style:none}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
-input,select,textarea,button{vertical-align:middle;-webkit-appearance:none;border:none;border-radius:0;-webkit-tap-highlight-color:transparent;background-color:transparent;box-sizing:border-box;cursor:pointer}
+input,select,textarea,button{vertical-align:middle;-webkit-appearance:none;border:none;border-radius:0;-webkit-tap-highlight-color:transparent;background-color:transparent;box-sizing:border-box;font-family:'NotoSans','Apple SD Gothic Neo','MalgunGothic', 'AppleGothic', sans-serif;cursor:pointer}
 button{border-collapse:collapse;border-spacing:0;border:0 none;background:transparent}
 body{-webkit-text-size-adjust:none;font-size:1.6rem}
 input::-ms-clear,
@@ -433,7 +433,7 @@ span,em,p,b,strong{font-size:inherit;line-height:inherit;color:inherit;font-fami
 
 
 /* add_btn */
-.add_btn{display: flex; justify-content: center; align-items: center; position: relative; background: #f1f1f1; max-width: 32.8rem; width: 100%; border-radius: 1rem; padding: 1rem 0; text-align: center; margin: 0 auto 1rem;}
+.add_btn{display: flex; justify-content: center; align-items: center; position: relative; background: #f1f1f1; max-width: 90.4rem; width: 100%; border-radius: 1rem; padding: 1rem 0; text-align: center; margin: 0 auto 1rem;}
 .add_btn2{display: none;}
 .add_btn_img{ max-width: 1.2rem; width: 100%; margin-right: 0.6rem; }
 .add_btn_wrap .text{color: #999; text-align: center;}
@@ -451,38 +451,43 @@ span,em,p,b,strong{font-size:inherit;line-height:inherit;color:inherit;font-fami
 .input_box{padding : 0 1.6rem 3rem;}
 .input_box2{max-height: 0vh; overflow: hidden;}
 .input_tag{position: relative;display: inline-block;}
-.input_tag::after{content: ''; display: block; position: absolute; background: url(../img/ndsw_icon_ess_h10.png); width: 1.1rem; height:1.1rem; background-size: contain;right: -1rem;top: 0;}
+.input_tag::after{content: ''; display: block; position: absolute; background: url(../img/ndsw_icon_ess_h10.png); width: 2.9639vw; height:2.9639vw; background-size: contain;right: -1rem;top: 0;}
 input[type="text"]{position: relative; display: block;-webkit-appearance: none;width: 100%;border: none;border-bottom: 1px solid #E0E0E0;padding: 0.8rem 0;color: #000;}
 input[type="text"]::placeholder{color: #C5C5C5; font-weight: 400 !important;}
 input:focus{border-bottom: 1px solid #000;outline: none; font-family: "Pretendard Variable", Pretendard !important;}
 .input_text_wrap{position: relative;}
-.input_text_delete{display: none; position: absolute; max-width: 1.5rem; height: 1.5rem; width: 100%; right: 0.7rem; bottom: 1.2rem;}
+.input_text_delete{display: none; position: absolute; max-width: 1.5rem; height: 1.5rem; width: 100%; right: 1.8056vw; bottom: 3.4722vw;}
 .input_text_delete_on{display: block;}
 
 
 /* input_[type="radio"] */
 .radio_box{display: flex;justify-content: space-between;}
 .age_input{display: none;}
-.age_btn{display: inline-block;text-align: center;padding: 0.8rem 1rem;border: 0.1rem solid #e0e0e0;border-radius: 8px;max-width: 10.4vw;width: 100%;}
+.age_btn{display: inline-block;text-align: center;padding: 2.3611vw 1rem;border: 0.1rem solid #e0e0e0;border-radius: 8px;max-width: 28.8889vw;width: 100%;}
 .age_input:checked + label{border: 0.1rem solid #000; font-weight: 700;}
 .age_input:checked + label span{font-weight: 700;}
 
 /* input[type="file"] */
 input[type=file]{display: none;}
 .file_box{display: flex; justify-content: space-between; margin-top: 1rem;}
-.file_btn{display: block;position: relative;max-width: 16rem;width: 100%;color: #666666;border: 0.1rem solid #e0e0e0;border-radius: 0.8rem;}
+.file_btn{display: block;position: relative;max-width: 41.6rem;width: 100%;color: #666666;border: 0.1rem solid #e0e0e0;border-radius: 0.8rem;}
 .plus{width: 3rem;height: 3rem;margin: 0 auto;margin-bottom: 1rem;}
 .file_text{text-align: center;}
 .upload_img{position: absolute; height: 100%;}
 .upload_img img{height: 100%; border-radius: 0.8rem;}
-.fade_img{max-width: 16rem; width: 100%; height: 16rem;position: absolute; right: 0; top: 0;}
+.fade_img{max-width: 41.6rem; width: 100%; height: 41.6rem;position: absolute; right: 0; top: 0;}
 .img_delete{position: absolute;width: 2.4rem;height: 2.4rem;top: 0.9rem;right: 0.9rem;}
 
 
 /* text-area */
-.input_text_area{padding: 2rem; border: 1px solid #E0E0E0; max-width: 32.8rem; width: 100%;box-sizing: border-box; border-radius: 0.8rem; height: 16rem;}
+.input_text_area{padding: 2rem; border: 1px solid #E0E0E0; max-width: 90.4rem; width: 100%;box-sizing: border-box; border-radius: 0.8rem; height: 41.6rem;}
 textarea:focus{border-color: #000;outline: none;}
 textarea::placeholder{font-weight: 400 !important; color: #C5C5C5;}
 .textarea_wrap{position: relative; margin: 1rem 0 0;}
 .text_length{position: absolute;right: 2rem;bottom: 2rem;}
 .label_text{padding: 4rem 1rem;}
+
+
+
+
+
