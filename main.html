@@ -9,12 +9,11 @@
     <script src="js/swiper.min.js"></script>
 </head>
 <body>
-    <style>
-.mp_top{height:44.8rem;background: #16171A}
-.mp_list>ul:after{content:'';display:block;clear:both}
-.mp_list>ul>li{position:relative;float:left;width:15rem;text-align:center;}
-
-.mp_item{width:12.8rem;margin:0 auto;opacity:0.4;filter: blur(2px);overflow:hidden}
+<style>
+.mp_top{position:relative;height:44.8rem;background: #16171A}
+.mp_top:after{content:'';position:absolute;bottom:0;left:0;width:100%;display:block;height:2rem;border-top-left-radius:2rem;border-top-right-radius:2rem;background:#fff}
+.mp_list>ul>li{position:relative;width:15rem}
+.mp_item{text-align:center;width:12.8rem;margin:0 auto;opacity:0.4;filter: blur(2px);overflow:hidden}
 .mp_item>.mpi_img{position:relative;display:block;border-radius:12.8rem}
 .mp_item>.mpi_img>img{width:100%;position:relative;z-index:3;box-sizing: border-box;vertical-align:top}
 .mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_img_tx4,.mpi_more{display:none}
@@ -30,17 +29,16 @@
 .mp_item>.mpi_tx1>i{display:block;white-space:nowrap; font-size: 3.4rem;line-height: 3rem;color:#fff;position: absolute;left: 50%;transform: translateX(-50%)}
 .mp_item>.mpi_more{font-size: 1.4rem;line-height: 2rem; color:#666;margin-top:0.6rem}
 
-
-.mp_list>ul>li.swiper-slide-active{padding-top:5rem}
-.mp_list>ul>li.swiper-slide-active>.mp_item{opacity:1;width:15rem;filter:none;overflow:visible}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img::before{animation:1.6s infinite ease rainbow;content:'';display:block;background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%);position:absolute;z-index:1;top:-0.8rem;left:-0.8rem;width:calc(100% + 1.6rem);height:calc(100% + 1.6rem);border-radius:13.4rem}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img::after{content:'';display:block;background:#16171A;position:absolute;z-index:2;top:-0.6rem;left:-0.6rem;width:calc(100% + 1.2rem);height:calc(100% + 1.2rem);border-radius:13.4rem}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1;}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s forwards ease ani2;}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx3{display:block;animation:0.3s forwards ease ani3;}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx4{display:block}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_tx1{display:block}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_more{display:block}
+.swiper-slide-active{padding-top:5rem}
+.swiper-slide-active>.mp_item{opacity:1;width:15rem;filter:none;overflow:visible}
+.swiper-slide-active>.mp_item>.mpi_img::before{animation:1.6s infinite ease rainbow;content:'';display:block;background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%);position:absolute;z-index:1;top:-0.8rem;left:-0.8rem;width:calc(100% + 1.6rem);height:calc(100% + 1.6rem);border-radius:13.4rem}
+.swiper-slide-active>.mp_item>.mpi_img::after{content:'';display:block;background:#16171A;position:absolute;z-index:2;top:-0.6rem;left:-0.6rem;width:calc(100% + 1.2rem);height:calc(100% + 1.2rem);border-radius:13.4rem}
+.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1;}
+.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s forwards ease ani2;}
+.swiper-slide-active>.mp_item>.mpi_img_tx3{display:block;animation:0.3s forwards ease ani3;}
+.swiper-slide-active>.mp_item>.mpi_img_tx4{display:block}
+.swiper-slide-active>.mp_item>.mpi_tx1{display:block}
+.swiper-slide-active>.mp_item>.mpi_more{display:block}
 
 @keyframes rainbow {
     0% {opacity:0.9;background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%)}
@@ -65,8 +63,9 @@
     100% {opacity:1;top:20.7rem;margin-left:3.3rem;}
 }
 
-    </style>
-    <div class="mp_top">
+</style>
+<div class="wrap">
+    <section class="mp_top">
         <div class="mp_list swiper-container">
             <ul class="swiper-wrapper">
                 <li class="swiper-slide">
@@ -76,6 +75,17 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>워렌버핏</i></span> 
+                        <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
+                        <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="mp_item">
+                        <span class="mpi_img"><img src="img/main/man.png" alt=""/></span>
+                        <span class="mpi_img_tx1"><img src="img/main/img_tx1.png" alt=""/></span>
+                        <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
+                        <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
+                        <span class="mpi_tx1"><i>빌에크먼</i></span> 
                         <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
@@ -97,7 +107,7 @@
                         <span class="mpi_img_tx1"><img src="img/main/img_tx1.png" alt=""/></span>
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
-                        <span class="mpi_tx1"><i>스텐리 드러켄밀러</i></span> 
+                        <span class="mpi_tx1"><i>스탠리 드러캔밀러 </i></span> 
                         <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
@@ -108,38 +118,76 @@
                         <span class="mpi_img_tx1"><img src="img/main/img_tx1.png" alt=""/></span>
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
-                        <span class="mpi_tx1"><i>하워드 막스</i></span> 
+                        <span class="mpi_tx1"><i>론 바론 </i></span> 
                         <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
             </ul>
         </div>
-    </div>
-    <script type="text/javascript">
-        var mp = {
-            on:function(){
-                new Swiper('.mp_list.swiper-container', {                    
-                    loop : true,
-                    centeredSlides: true,
-                    slidesPerView: 'auto',
-                    effect: "coverflow",
-                    coverflowEffect: {
-                        rotate: 0,
-                        stretch: -10,
-                        depth: 100,
-                        modifier: 1.5,
-                        slideShadows: false,
-                    },
-                    //freeMode: false,
-                    spaceBetween: 20,
-                    resistanceRatio: 0
-                });
-            }
+    </section>
+  
+    <style>
+        .padd{padding-left:1.6rem;padding-right:1.6rem}
+        .nm_ban{display:flex;flex-direction: column;justify-content: center;padding-left:7rem;border-radius: 1rem;background: #F0FAE5; height: 7.6rem;}
+        .nm_ban_tx1{font-size:1.6rem;line-height: 2.2rem;letter-spacing:-0.06rem}
+        .nm_ban_tx2{}
+    </style>
+    <section class="padd">
+        <div class="nm_ban">
+            <strong class="nm_ban_tx1">큰손의 포트폴리오 이야기</strong>
+            <span class="nm_ban_tx1"> [23년 3분기] 워렌버핏이 애플을 사랑하는 이유</span>
+        </div>
+    </section>
+    <section>큰손들이 PICK한 종목은?</section>
+    <section>
+
+        <li class="big_hand_name big_hand_name_on P-f14 c013 mr6">워랜 버핏</li>
+        <li class="big_hand_name P-f14 c013 mr6">빌 에크먼</li>
+        <li class="big_hand_name P-f14 c013 mr6">마이클 버리</li>
+        <li class="big_hand_name P-f14 c013 mr6">스탠리 드러캔밀러</li>
+        <li class="big_hand_name P-f14 c013">론 바론</li>  
+        
+        
+    </section>
+    <section>
+        <div class="mp_tit">
+            <h3>가장 많이 매수한 종목</h3> 
+            <span>주식증감률 순</span></section>
+        </div>
+    <section>
+        <div class="mp_tit">
+            <h3>가장 많이 매도한 종목</h3> 
+            <span>주식증감률 순</span>
+        </div>
+    </section>
+    <section>유의사항</section>
+    <section>큰손 PICK 일괄주문</section>
+</div>
+
+<script type="text/javascript">
+    var mp = {
+        on:function(){
+            new Swiper('.mp_list.swiper-container', {                    
+                loop : true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: -10,
+                    depth: 100,
+                    modifier: 1.5,
+                    slideShadows: false,
+                },
+                //freeMode: false,
+                spaceBetween: 20,
+                resistanceRatio: 0
+            });
         }
-        mp.on();
-    </script>
-    
+    }
+    mp.on();
+</script>
 
 </body>
 </html>
