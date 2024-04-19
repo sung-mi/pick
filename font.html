@@ -5,66 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @font-face{font-family:'PretendardB';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-Bold.woff') format('woff');
-	font-weight:normal;
-	font-style:normal;
-	font-display:swap;
-}
-@font-face{font-family:'PretendardBk';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-Black.woff') format('woff');
-	font-weight:normal;
-	font-style:normal;
-	font-display:swap;
-}
-@font-face{font-family:'PretendardEB';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-ExtraBold.woff') format('woff');
-	font-weight:normal;
+ @font-face{
+    font-family:'PretendardS';
+	src:url('css/font/Pretendard-Black.woff') format('woff');
+	font-weight:900;
 	font-style:normal;
 	font-display:swap;
 }
 
-@font-face{font-family:'PretendardEL';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-ExtraLight.woff');
-	font-weight:normal;
+
+@font-face{
+    font-family:'PretendardS';
+	src:url('css/font/Pretendard-ExtraBold.woff') format('woff');
+	font-weight:800;
 	font-style:normal;
 	font-display:swap;
 }
-@font-face{font-family:'PretendardL';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-Light.woff');
-	font-weight:normal;
-	font-style:normal;
-	font-display:swap;
-}
-@font-face{font-family:'PretendardM';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-Medium.woff');
-	font-weight:normal;
+@font-face{
+    font-family:'PretendardS';
+	src:url('css/font/Pretendard-Bold.woff') format('woff');
+	font-weight:700;
 	font-style:normal;
 	font-display:swap;
 }
 
 @font-face {
-	font-family:'PretendardR';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-Regular.woff') format('woff');
-	font-weight:normal;
+	font-family:'PretendardS';
+	src:url('css/font/Pretendard-SemiBold.woff') format('woff');
+	font-weight:600;
 	font-style:normal;
 	font-display:swap;
 }
+
+
+@font-face{
+    font-family:'PretendardS';
+	src:url('css/font/Pretendard-Medium.woff');
+	font-weight:500;
+	font-style:normal;
+	font-display:swap;
+}
+
 @font-face {
-	font-family:'PretendardSB';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-SemiBold.woff') format('woff');
-	font-weight:normal;
+	font-family:'PretendardS';
+	src:url('css/font/Pretendard-Regular.woff') format('woff');
+	font-weight:400;
 	font-style:normal;
 	font-display:swap;
 }
+@font-face{
+    font-family:'PretendardS';
+	src:url('css/font/Pretendard-Light.woff');
+	font-weight:300;
+	font-style:normal;
+	font-display:swap;
+}
+@font-face{
+    font-family:'PretendardS';
+	src:url('css/font/Pretendard-ExtraLight.woff');
+	font-weight:200;
+	font-style:normal;
+	font-display:swap;
+}
+
+
 @font-face {
-	font-family:'PretendardT';
-	src:url('https://m.nhqv.com/static/css/worldcup/font/Pretendard-Thin.woff') format('woff');
-	font-weight:normal;
+	font-family:'PretendardS';
+	src:url('css/font/Pretendard-Thin.woff') format('woff');
+	font-weight:100;
 	font-style:normal;
 	font-display:swap;
 }
-*{font-family: 'PretendardR','Pretendard';}
+*{font-family: 'Pretendard';}
+.box{display:flex}
+.font{border-left:1px solid red}
+.font *{font-family: 'PretendardS','Pretendard';}
 .a1{font-weight:100}
 .a2{font-weight:200}
 .a3{font-weight:300}
@@ -72,6 +87,8 @@
 .a5{font-weight:500}
 .a6{font-weight:600}
 .a7{font-weight:700}
+.a8{font-weight:800}
+.a9{font-weight:900}
 
 .fT{font-family: 'PretendardT'}
 .fSB{font-family: 'PretendardSB'}
@@ -85,22 +102,39 @@
     </style>
 </head>
 <body>
-    <div class="a1">안녕하세요 TEST</div>
-    <div class="a2">안녕하세요 TEST</div>
-    <div class="a3">안녕하세요 TEST</div>
-    <div class="a4">안녕하세요 TEST</div>
-    <div class="a5">안녕하세요 TEST</div>
-    <div class="a6">안녕하세요 TEST</div>
-    <div class="a7">안녕하세요 TEST</div>
+    <div class="box">
+    <div class="or">
+        <div class="a1">안녕하세요 TEST</div>
+        <div class="a2">안녕하세요 TEST</div>
+        <div class="a3">안녕하세요 TEST</div>
+        <div class="a4">안녕하세요 TEST</div>
+        <div class="a5">안녕하세요 TEST</div>
+        <div class="a6">안녕하세요 TEST</div>
+        <div class="a7">안녕하세요 TEST</div>
+        <div class="a8">안녕하세요 TEST</div>
+        <div class="a9">안녕하세요 TEST</div>
+    </div>
+    <div class="font">
+        <div class="a1">안녕하세요 TEST</div>
+        <div class="a2">안녕하세요 TEST</div>
+        <div class="a3">안녕하세요 TEST</div>
+        <div class="a4">안녕하세요 TEST</div>
+        <div class="a5">안녕하세요 TEST</div>
+        <div class="a6">안녕하세요 TEST</div>
+        <div class="a7">안녕하세요 TEST</div>
+        <div class="a8">안녕하세요 TEST</div>
+        <div class="a9">안녕하세요 TEST</div>
 
-    <div class="fT">안녕하세요 TEST</div>
-    <div class="fSB">안녕하세요 TEST</div>
-    <div class="fR">안녕하세요 TEST</div>
-    <div class="fM">안녕하세요 TEST</div>
-    <div class="fL">안녕하세요 TEST</div>
-    <div class="fEL">안녕하세요 TEST</div>
-    <div class="fEB">안녕하세요 TEST</div>
-    <div class="fBK">안녕하세요 TEST</div>
-    <div class="fB">안녕하세요 TEST</div>
+        <!-- <div class="fT">안녕하세요 TEST</div>
+        <div class="fSB">안녕하세요 TEST</div>
+        <div class="fR">안녕하세요 TEST</div>
+        <div class="fM">안녕하세요 TEST</div>
+        <div class="fL">안녕하세요 TEST</div>
+        <div class="fEL">안녕하세요 TEST</div>
+        <div class="fEB">안녕하세요 TEST</div>
+        <div class="fBK">안녕하세요 TEST</div>
+        <div class="fB">안녕하세요 TEST</div> -->
+    </div>
+</div>
 </body>
 </html>
