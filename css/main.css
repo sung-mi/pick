@@ -99,7 +99,7 @@
 .mpsec_item>span{display:flex;align-items: center;}
 .mpsec_ico{height:3rem;width:3rem;display:inline-flex}
 .mpsec_ico>img{width:100%}
-.mpsec_tx1{color:#000;font-size:1.6rem;margin-left:1rem}
+.mpsec_tx1{color:#000;font-size:1.6rem;margin-left:1rem;font-weight:500}
 .mpsec_tx2{color:#999;font-size:1.2rem;margin-left:0.8rem}
 .mpcht_label{width:0.8rem;height:0.8rem;display:inline-flex;border-radius:0.8rem}
 .mpsec_per{margin-left:0.5rem;font-size:1.6rem;font-weight:500}
