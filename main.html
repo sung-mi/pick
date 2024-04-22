@@ -33,15 +33,13 @@
 .mp_item>.mpi_img_tx2{opacity:0;position:absolute;top:25rem;left:50%;margin-left:-20.5rem;width:12.6rem;z-index:3}
 .mp_item>.mpi_img_tx3{opacity:0;position:absolute;top:25rem;left:50%;margin-left:5.3rem;width:13.4rem;z-index:3}
 .mp_item>.mpi_img_tx4{position:relative;height:5.5rem;margin-top:0.6rem}
-.mp_item>.mpi_img_tx4>i{color:#c5c5c5;font-family: 'Arita';font-size:1.6rem;line-height:2.4rem;width:27.4rem;height:4rem;position: absolute;left: 50%;transform: translateX(-50%);}
-
-.mp_item>.mpi_img_tx4>i>img{width:auto;height:100%}
-.mp_item>.mpi_img_tx4>i::before{content:'';position:absolute;top:0;left:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_l.png) 0 0 no-repeat;background-size:100% auto}
-.mp_item>.mpi_img_tx4>i::after{content:'';position:absolute;top:0;right:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_r.png) 0 0 no-repeat;background-size:100% auto}
+.mp_item>.mpi_img_tx4>i{color:#c5c5c5;white-space: nowrap;padding: 0 2.6rem;font-family: 'Arita';font-size:1.6rem;line-height:2.4rem;position: absolute;left: 50%;transform: translateX(-50%);}
+.mp_item>.mpi_img_tx4>i::before{content:'';position:absolute;top:0.2rem;left:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_l.png) 0 0 no-repeat;background-size:100% auto}
+.mp_item>.mpi_img_tx4>i::after{content:'';position:absolute;top:0.2rem;right:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_r.png) 0 0 no-repeat;background-size:100% auto}
 
 
 .mp_item>.mpi_tx1{display:none;margin-top:4rem;height: 4.6rem;position:relative}
-.mp_item>.mpi_tx1>i{display:block;white-space:nowrap; font-size: 3.4rem;font-weight:600;line-height: 3rem;color:#fff;position: absolute;left: 50%;transform: translateX(-50%)}
+.mp_item>.mpi_tx1>i{display:block;white-space:nowrap; font-size: 3.4rem;font-weight:600;line-height:inherit;color:#fff;position: absolute;left: 50%;transform: translateX(-50%)}
 .mp_item>.mpi_more{font-size: 1.4rem;font-weight:500;line-height: 2rem; color:#666;margin-top:0.6rem}
 
 .mp_list>ul>li.swiper-slide-active{padding-top:5rem}
@@ -106,7 +104,10 @@
 .padd{padding-left:1.6rem;padding-right:1.6rem}
 .mp_h2{padding-left:0.4rem;font-size:1.9rem;font-weight:700;line-height:2.8rem}
 
-
+.arrow{max-width:1.6rem;width:100%;height: 1.6rem;}
+.select{display: none; align-items: center;}
+.select_on{display:inline-flex;}
+.select div:first-child{font-size:1.4rem;margin-right: 0.4rem;white-space: nowrap;font-weight: 500;}
 </style>
 <div class="wrap">
 
@@ -131,7 +132,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>빌에크먼</i></span> 
-                        <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
+                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -142,7 +143,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>마이클버리</i></span> 
-                        <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
+                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -153,7 +154,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>스탠리 드러캔밀러 </i></span> 
-                        <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
+                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -164,7 +165,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>론 바론 </i></span> 
-                        <span class="mpi_img_tx4"><i><img src="img/main/img_tx4.png" alt=""/></i></span> 
+                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -192,20 +193,13 @@
         </div>
     </section>
     <section class="sec_bar">
-        <style>
-
-.arrow{max-width:1.6rem;width:100%;height: 1.6rem;}
-.select{display: none; align-items: center;}
-.select_on{display:inline-flex;}
-.select div:first-child{font-size:1.4rem;margin-right: 0.4rem;white-space: nowrap;font-weight: 500;}
-        </style>
         <div class="ac mt26">
-            <a href="javascript:void(0)" class="select select_on">
+            <div class="select select_on">
                 <div>24년 1분기</div>
                 <div class="arrow">
                     <img src="img/main/ico_arw_b.png" alt="">
                 </div>
-            </a>
+            </div>
         </div>
         <style>
             .mp_cht_area{max-width:54rem;margin:0 auto}
@@ -230,7 +224,7 @@
         <div class="mp_cht_area" style="max-height:56rem">
             <img src="img/main/img_chart.png"/>
         </div>
-        <div class="mp_sec_list padd ">
+        <div class="mp_sec_list padd mt10">
             <ul>
                 <li>
                     <div class="mpsec_item">
