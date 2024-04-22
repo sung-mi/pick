@@ -28,19 +28,18 @@
 .mp_item{text-align:center;width:12.8rem;margin:0 auto;opacity:0.4;filter: blur(2px);overflow:hidden}
 .mp_item>.mpi_img{position:relative;display:block;border-radius:12.8rem}
 .mp_item>.mpi_img>img{width:100%;position:relative;z-index:3;box-sizing: border-box;vertical-align:top}
-.mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_img_tx4,.mpi_more{display:none}
+.mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_tx2,.mpi_more{display:none}
 .mp_item>.mpi_img_tx1{position:absolute;top:-5rem;left:50%;width:11.4rem;z-index:3}
 .mp_item>.mpi_img_tx2{opacity:0;position:absolute;top:25rem;left:50%;margin-left:-20.5rem;width:12.6rem;z-index:3}
 .mp_item>.mpi_img_tx3{opacity:0;position:absolute;top:25rem;left:50%;margin-left:5.3rem;width:13.4rem;z-index:3}
-.mp_item>.mpi_img_tx4{position:relative;height:5.5rem;margin-top:0.6rem}
-.mp_item>.mpi_img_tx4>i{color:#c5c5c5;white-space: nowrap;padding: 0 2.6rem;font-family: 'Arita';font-size:1.6rem;line-height:2.4rem;position: absolute;left: 50%;transform: translateX(-50%);}
-.mp_item>.mpi_img_tx4>i::before{content:'';position:absolute;top:0.2rem;left:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_l.png) 0 0 no-repeat;background-size:100% auto}
-.mp_item>.mpi_img_tx4>i::after{content:'';position:absolute;top:0.2rem;right:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_r.png) 0 0 no-repeat;background-size:100% auto}
 
-
-.mp_item>.mpi_tx1{display:none;margin-top:4rem;height: 4.6rem;position:relative}
+.mp_item>.mpi_tx1{display:none;margin-top:4rem;height: 4.6rem;position:relative;opacity:0;}
 .mp_item>.mpi_tx1>i{display:block;white-space:nowrap; font-size: 3.4rem;font-weight:600;line-height:inherit;color:#fff;position: absolute;left: 50%;transform: translateX(-50%)}
-.mp_item>.mpi_more{font-size: 1.4rem;font-weight:500;line-height: 2rem; color:#666;margin-top:0.6rem}
+.mp_item>.mpi_tx2{position:relative;height:5.5rem;margin-top:0.6rem;opacity:0;}
+.mp_item>.mpi_tx2>i{color:#c5c5c5;white-space: nowrap;padding: 0 2.6rem;max-width:30.8rem;overflow:hidden;font-family: 'Arita';font-size:1.6rem;line-height:2.4rem;position: absolute;left: 50%;transform: translateX(-50%);}
+.mp_item>.mpi_tx2>i::before{content:'';position:absolute;top:0.2rem;left:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_l.png) 0 0 no-repeat;background-size:100% auto}
+.mp_item>.mpi_tx2>i::after{content:'';position:absolute;top:0.2rem;right:0;width:1.6rem;height:1.2rem;background:url(img/main/img_tx4_r.png) 0 0 no-repeat;background-size:100% auto}
+.mp_item>.mpi_more{font-size: 1.4rem;font-weight:500;line-height: 2rem; color:#666;margin-top:0.6rem;opacity:0;}
 
 .mp_list>ul>li.swiper-slide-active{padding-top:5rem}
 .mp_list>ul>li.swiper-slide-active>.mp_item{opacity:1;width:15rem;filter:none;overflow:visible}
@@ -49,9 +48,9 @@
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1;}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s forwards ease ani2;}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx3{display:block;animation:0.3s forwards ease ani3;}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx4{display:block}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_tx1{display:block}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_more{display:block}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_tx1{display:block;opacity:1;animation:0.3s backwards ease ani4;}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_tx2{display:block;opacity:1;animation:0.3s backwards ease ani4;}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_more{display:block;opacity:1;animation:0.3s backwards ease ani4;}
 
 @keyframes rainbow {
     0% {opacity:0.9;background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%)}
@@ -75,6 +74,9 @@
 @keyframes ani3 {
     100% {opacity:1;top:20.7rem;margin-left:3.3rem;}
 }
+@keyframes ani4 {
+    0% {opacity:0}
+}
 
 /* namuh banner */
 .nm_ban{position:relative;display:flex;flex-direction: column;justify-content: center;padding-left:7rem;border-radius: 1rem;background: #F0FAE5; height: 7.6rem;}
@@ -93,6 +95,31 @@
 .mpt_list>ul>li>a.active{position:relative;color:#000;font-weight: 700;}
 .mpt_list>ul>li>a.active::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:0.1rem;background:#000}
 
+.mp_cht_area{max-width:54rem;margin:0 auto}
+.mp_sec_list>ul>li{margin-bottom:2rem;}
+.mpsec_item{display:flex;justify-content: space-between;align-items: center;height:3remx}
+.mpsec_item>span{display:flex;align-items: center;}
+.mpsec_ico{height:3rem;width:3rem;display:inline-flex}
+.mpsec_ico>img{width:100%}
+.mpsec_tx1{color:#000;font-size:1.6rem;margin-left:1rem}
+.mpsec_tx2{color:#999;font-size:1.2rem;margin-left:0.8rem}
+.mpcht_label{width:0.8rem;height:0.8rem;display:inline-flex;border-radius:0.8rem}
+.mpsec_per{margin-left:0.5rem;font-size:1.6rem;font-weight:500}
+.mp_bgc1{background-color:#0093FF}
+.mp_bgc2{background-color:#008B8B}
+.mp_bgc3{background-color:#52C750}
+.mp_bgc4{background-color:#FBBE2C}
+.mp_bgc5{background-color:#FF7F3E}
+.mp_bgc6{background-color:#D1D1D1}
+.mp_btn_more{border-radius:0.7rem;height:4.2rem;border:0.1rem solid #f0f0f0;background:#fff;font-size:1.4rem;color:#666;display:flex;justify-content: center;align-items: center}
+ 
+.mp_note{display:flex;height: 3.4rem;justify-content: space-between;align-items: center;background-color:#F9F9F9}
+.mp_note>*{display:inline-flex;align-items: center;}
+.ico_i{width:1.4rem;height:1.4rem;display:inline-flex;background:url(img/main/ico_i.png) 0 0 no-repeat;background-size:100% auto}
+.mp_note_tx{font-size: 1.2rem;line-height: 1.5rem;height: 1.4rem;margin-left: 0.4rem;font-weight: 400;color:#666}
+.mp_note_more{width:1.6rem;height:1.6rem;background:url(img/main/ico_arw_r.png) 0 0 no-repeat;background-size:100% auto}
+.sec_bar{border-bottom:0.8rem solid #F5F5F5;padding-bottom:3rem;margin-bottom:3rem}
+
 /* btns */
 .mp_btn_order{font-size:1.7rem;font-weight:500;display:flex;height:5rem;justify-content:center;align-items:center;color:#fff}
 .bgc_qv{background-color:#FFAA1A}
@@ -108,6 +135,14 @@
 .select{display: none; align-items: center;}
 .select_on{display:inline-flex;}
 .select div:first-child{font-size:1.4rem;margin-right: 0.4rem;white-space: nowrap;font-weight: 500;}
+
+.mp_tit{display:flex;justify-content: space-between;align-items: center;}
+.mp_h3{display:inline-flex;align-items: center;font-size:1.6rem;line-height:2.4rem;font-weight:700;}
+.mp_h3:after{content:'';display:inline-flex;width:1.6rem;height:1.6rem;background:url(img/main/ico_arw_r.png) 100% 50% no-repeat;background-size:100% auto}
+.mp_h3 *{font-weight:inherit;}
+.mp_tit_info{font-size:1.2rem;line-height:1.8rem;display:inline-flex;color:#999}
+
+     
 </style>
 <div class="wrap">
 
@@ -121,7 +156,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>워렌버핏</i></span> 
-                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
+                        <span class="mpi_tx2"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -132,7 +167,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>빌에크먼</i></span> 
-                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
+                        <span class="mpi_tx2"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -143,7 +178,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>마이클버리</i></span> 
-                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
+                        <span class="mpi_tx2"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -154,7 +189,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>스탠리 드러캔밀러 </i></span> 
-                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
+                        <span class="mpi_tx2"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -165,7 +200,7 @@
                         <span class="mpi_img_tx2"><img src="img/main/img_tx2.png" alt=""/></span>
                         <span class="mpi_img_tx3"><img src="img/main/img_tx3.png" alt=""/></span>
                         <span class="mpi_tx1"><i>론 바론 </i></span> 
-                        <span class="mpi_img_tx4"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
+                        <span class="mpi_tx2"><i>10년 이상을 볼 것이 아니면 <br/> 10분도 그 주식을 갖고 있지 마라.</i></span> 
                         <a class="mpi_more" href="javascript:void(0)"> 자세히 보기</a> 
                     </div>
                 </li>
@@ -202,24 +237,7 @@
             </div>
         </div>
         <style>
-            .mp_cht_area{max-width:54rem;margin:0 auto}
-            .mp_sec_list>ul>li{margin-bottom:2rem;}
-            .mpsec_item{display:flex;justify-content: space-between;align-items: center;height:3remx}
-            .mpsec_item>span{display:flex;align-items: center;}
-            .mpsec_ico{height:3rem;width:3rem;display:inline-flex}
-            .mpsec_ico>img{width:100%}
-            .mpsec_tx1{color:#000;font-size:1.6rem;margin-left:1rem}
-            .mpsec_tx2{color:#999;font-size:1.2rem;margin-left:0.8rem}
-            .mpcht_label{width:0.8rem;height:0.8rem;display:inline-flex;border-radius:0.8rem}
-            .mpsec_per{margin-left:0.5rem;font-size:1.6rem;font-weight:500}
-            .mp_bgc1{background-color:#0093FF}
-            .mp_bgc2{background-color:#008B8B}
-            .mp_bgc3{background-color:#52C750}
-            .mp_bgc4{background-color:#FBBE2C}
-            .mp_bgc5{background-color:#FF7F3E}
-            .mp_bgc6{background-color:#D1D1D1}
-            .mp_btn_more{border-radius:0.7rem;height:4.2rem;border:0.1rem solid #f0f0f0;background:#fff;font-size:1.4rem;color:#666;display:flex;justify-content: center;align-items: center}
-           
+            
         </style>
         <div class="mp_cht_area" style="max-height:56rem">
             <img src="img/main/img_chart.png"/>
@@ -309,14 +327,6 @@
             <a href="javascript:void(0)" class="mp_btn_more">포트폴리오 전체보기</a>
         </div>
     </section>
-
-    <style>
-         .mp_tit{display:flex;justify-content: space-between;align-items: center;}
-         .mp_h3{display:inline-flex;align-items: center;font-size:1.6rem;line-height:2.4rem;font-weight:700;}
-         .mp_h3:after{content:'';display:inline-flex;width:1.6rem;height:1.6rem;background:url(img/main/ico_arw_r.png) 100% 50% no-repeat;background-size:100% auto}
-         .mp_h3 *{font-weight:inherit;}
-         .mp_tit_info{font-size:1.2rem;line-height:1.8rem;display:inline-flex;color:#999}
-    </style>
     <section class="padd sec_bar">
         <div class="mp_tit">
             <a href="javascript:void(0)" class="mp_h3"><span>가장 많이 <i class="c238">매수</i>한 종목</span></a> 
@@ -416,15 +426,6 @@
             </ul>
         </div>
     </section>
-   
-  <style>
-   .mp_note{display:flex;height: 3.4rem;justify-content: space-between;align-items: center;background-color:#F9F9F9}
-   .mp_note>*{display:inline-flex;align-items: center;}
-   .ico_i{width:1.4rem;height:1.4rem;display:inline-flex;background:url(img/main/ico_i.png) 0 0 no-repeat;background-size:100% auto}
-  .mp_note_tx{font-size: 1.2rem;line-height: 1.5rem;height: 1.4rem;margin-left: 0.4rem;font-weight: 400;color:#666}
-  .mp_note_more{width:1.6rem;height:1.6rem;background:url(img/main/ico_arw_r.png) 0 0 no-repeat;background-size:100% auto}
-  .sec_bar{border-bottom:0.8rem solid #F5F5F5;padding-bottom:3rem;margin-bottom:3rem}
-  </style>
     <section class="sticky_bottom">
         <div class="mp_note padd">
             <span>
