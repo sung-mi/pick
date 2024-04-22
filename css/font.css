@@ -61,3 +61,11 @@
 	font-style:normal;
 	font-display:swap;
 }
+
+@font-face {
+	font-family:'Arita';
+	src:url('font/Arita-buriHL.woff') format('woff');
+	font-weight:500;
+	font-style:normal;
+	font-display:swap;
+}
