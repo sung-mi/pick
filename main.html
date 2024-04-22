@@ -193,8 +193,9 @@
         </div>
         <style>
             .mp_cht_area{max-width:54rem;margin:0 auto}
-            .mp_sec_list>ul>li{display:flex;justify-content: space-between;align-items: center;height:3rem;margin-bottom:2rem;}
-            .mp_sec_list>ul>li>span{display:flex;align-items: center;}
+            .mp_sec_list>ul>li{margin-bottom:2rem;}
+            .mpsec_item{display:flex;justify-content: space-between;align-items: center;height:3remx}
+            .mpsec_item>span{display:flex;align-items: center;}
             .mpsec_ico{height:3rem;width:3rem;display:inline-flex}
             .mpsec_ico>img{width:100%}
             .mpsec_tx1{color:#000;font-size:1.6rem;margin-left:1rem}
@@ -216,69 +217,81 @@
         <div class="mp_sec_list padd ">
             <ul>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_AAPL.png" alt="AAPL"></i>
-                        <i class="mpsec_tx1">애플</i>
-                        <i class="mpsec_tx2">AAPL</i>
-                    </span>
-                    <span>
-                        <i class="mpcht_label mp_bgc1"></i>
-                        <i class="mpsec_per">50%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_AAPL.png" alt="AAPL"></i>
+                            <i class="mpsec_tx1">애플</i>
+                            <i class="mpsec_tx2">AAPL</i>
+                        </span>
+                        <span>
+                            <i class="mpcht_label mp_bgc1"></i>
+                            <i class="mpsec_per">50%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_BAC.png" alt="BAC"></i>
-                        <i class="mpsec_tx1">뱅크 오브 아메리카</i>
-                        <i class="mpsec_tx2">BAC</i>
-                    </span>
-                    <span>
-                        <i class="mpcht_label mp_bgc2"></i>
-                        <i class="mpsec_per">9%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_BAC.png" alt="BAC"></i>
+                            <i class="mpsec_tx1">뱅크 오브 아메리카</i>
+                            <i class="mpsec_tx2">BAC</i>
+                        </span>
+                        <span>
+                            <i class="mpcht_label mp_bgc2"></i>
+                            <i class="mpsec_per">9%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_AXP.png" alt="AXP"></i>
-                        <i class="mpsec_tx1">아메리칸 엑스프레스</i>
-                        <i class="mpsec_tx2">AXP</i>
-                    </span>
-                    <span>
-                        <i class="mpcht_label mp_bgc3"></i>
-                        <i class="mpsec_per">9%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_AXP.png" alt="AXP"></i>
+                            <i class="mpsec_tx1">아메리칸 엑스프레스</i>
+                            <i class="mpsec_tx2">AXP</i>
+                        </span>
+                        <span>
+                            <i class="mpcht_label mp_bgc3"></i>
+                            <i class="mpsec_per">9%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_KO.png" alt="KO"></i>
-                        <i class="mpsec_tx1">코카콜라</i>
-                        <i class="mpsec_tx2">KO</i>
-                    </span>
-                    <span>
-                        <i class="mpcht_label mp_bgc4"></i>
-                        <i class="mpsec_per">7%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_KO.png" alt="KO"></i>
+                            <i class="mpsec_tx1">코카콜라</i>
+                            <i class="mpsec_tx2">KO</i>
+                        </span>
+                        <span>
+                            <i class="mpcht_label mp_bgc4"></i>
+                            <i class="mpsec_per">7%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_CVX.png" alt="CVX"></i>
-                        <i class="mpsec_tx1">쉐브론</i>
-                        <i class="mpsec_tx2">CVX</i>
-                    </span>
-                    <span>
-                        <i class="mpcht_label mp_bgc5"></i>
-                        <i class="mpsec_per">6%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_CVX.png" alt="CVX"></i>
+                            <i class="mpsec_tx1">쉐브론</i>
+                            <i class="mpsec_tx2">CVX</i>
+                        </span>
+                        <span>
+                            <i class="mpcht_label mp_bgc5"></i>
+                            <i class="mpsec_per">6%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_etc.png" alt="기타"></i>
-                        <i class="mpsec_tx1">기타</i>
-                    </span>
-                    <span>
-                        <i class="mpcht_label mp_bgc6"></i>
-                        <i class="mpsec_per">5%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_etc.png" alt="기타"></i>
+                            <i class="mpsec_tx1">기타</i>
+                        </span>
+                        <span>
+                            <i class="mpcht_label mp_bgc6"></i>
+                            <i class="mpsec_per">5%</i>
+                        </span>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -296,86 +309,98 @@
     </style>
     <section class="padd sec_bar">
         <div class="mp_tit">
-            <h3 class="mp_h3"><span>가장 많이 <i class="c238">매수</i>한 종목</span></h3> 
+            <a href="javascript:void(0)" class="mp_h3"><span>가장 많이 <i class="c238">매수</i>한 종목</span></a> 
             <span class="mp_tit_info">주식증감률 순</span>
         </div>
         <div class="mp_sec_list mt26">
             <ul>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_AAPL.png" alt="AAPL"></i>
-                        <i class="mpsec_tx1">애플</i>
-                        <i class="mpsec_tx2">AAPL</i>
-                    </span>
-                    <span>
-                        <i class="mpsec_c"></i>
-                        <i class="mpsec_per c238">50%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_AAPL.png" alt="AAPL"></i>
+                            <i class="mpsec_tx1">애플</i>
+                            <i class="mpsec_tx2">AAPL</i>
+                        </span>
+                        <span>
+                            <i class="mpsec_c"></i>
+                            <i class="mpsec_per c238">50%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_NVDA.png" alt="NVDA"></i>
-                        <i class="mpsec_tx1">엔비디아</i>
-                        <i class="mpsec_tx2">NVDA</i>
-                    </span>
-                    <span>
-                        <i class="mpsec_c"></i>
-                        <i class="mpsec_per c238">20.56%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_NVDA.png" alt="NVDA"></i>
+                            <i class="mpsec_tx1">엔비디아</i>
+                            <i class="mpsec_tx2">NVDA</i>
+                        </span>
+                        <span>
+                            <i class="mpsec_c"></i>
+                            <i class="mpsec_per c238">20.56%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_SBUX.png" alt="SBUX"></i>
-                        <i class="mpsec_tx1">스타벅스</i>
-                        <i class="mpsec_tx2">SBUX</i>
-                    </span>
-                    <span>
-                        <i class="mpsec_c"></i>
-                        <i class="mpsec_per c238">20.56%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_SBUX.png" alt="SBUX"></i>
+                            <i class="mpsec_tx1">스타벅스</i>
+                            <i class="mpsec_tx2">SBUX</i>
+                        </span>
+                        <span>
+                            <i class="mpsec_c"></i>
+                            <i class="mpsec_per c238">20.56%</i>
+                        </span>
+                    </div>
                 </li>                
             </ul>
         </div>
     </section>
     <section class="padd">
         <div class="mp_tit">
-            <h3 class="mp_h3"><span>가장 많이 <i class="c239">매도</i>한 종목</span></h3> 
+            <a href="javascript:void(0)"  class="mp_h3"><span>가장 많이 <i class="c239">매도</i>한 종목</span></a> 
             <span class="mp_tit_info">주식증감률 순</span>
         </div>
         <div class="mp_sec_list mt26 pb20">
             <ul>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_ABNB.png" alt="ABNB"></i>
-                        <i class="mpsec_tx1">Airbnb</i>
-                        <i class="mpsec_tx2">ABNB</i>
-                    </span>
-                    <span>
-                        <i class="mpsec_c"></i>
-                        <i class="mpsec_per c239">-2.56%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_ABNB.png" alt="ABNB"></i>
+                            <i class="mpsec_tx1">Airbnb</i>
+                            <i class="mpsec_tx2">ABNB</i>
+                        </span>
+                        <span>
+                            <i class="mpsec_c"></i>
+                            <i class="mpsec_per c239">-2.56%</i>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_SBUX.png" alt="SBUX"></i>
-                        <i class="mpsec_tx1">스타벅스</i>
-                        <i class="mpsec_tx2">SBUX</i>
-                    </span>
-                    <span>
-                        <i class="mpsec_c"></i>
-                        <i class="mpsec_per c239">-2.56%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_SBUX.png" alt="SBUX"></i>
+                            <i class="mpsec_tx1">스타벅스</i>
+                            <i class="mpsec_tx2">SBUX</i>
+                        </span>
+                        <span>
+                            <i class="mpsec_c"></i>
+                            <i class="mpsec_per c239">-2.56%</i>
+                        </span>
+                    </div>   
                 </li>
                 <li>
-                    <span>
-                        <i class="mpsec_ico"><img src="img/main/ci_TSLA.png" alt="TSLA"></i>
-                        <i class="mpsec_tx1">테슬라</i>
-                        <i class="mpsec_tx2">TSLA</i>
-                    </span>
-                    <span>
-                        <i class="mpsec_c"></i>
-                        <i class="mpsec_per c239">-2.56%</i>
-                    </span>
+                    <div class="mpsec_item">
+                        <span>
+                            <i class="mpsec_ico"><img src="img/main/ci_TSLA.png" alt="TSLA"></i>
+                            <i class="mpsec_tx1">테슬라</i>
+                            <i class="mpsec_tx2">TSLA</i>
+                        </span>
+                        <span>
+                            <i class="mpsec_c"></i>
+                            <i class="mpsec_per c239">-2.56%</i>
+                        </span>
+                    </div>
                 </li>
                 
             </ul>
