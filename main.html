@@ -89,8 +89,9 @@
 /* tab list */
 .mpt_list{padding:0 1.6rem;position:relative;background:#fff;height:4.8rem}
 .mpt_list:before{content:'';position:absolute;bottom:0;left:0;display:block;width:100%;height:0.1rem;background:#E0E0E0}
+.mpt_list:after{content:'';position:absolute;z-index:2;bottom:0;right:0;display:block;width:4.8rem;height:100%;background:url(img/main/tab_end.png) 0 0 no-repeat;background-size:100% auto}
 .mpt_list>ul>li{width:auto}
-.mpt_list>ul>li>a{font-size: 1.6rem;font-weight: 500;color:#999;line-height: 2.4rem;padding:0 1rem;display:inline-flex;height: 100%;align-items: center;}
+.mpt_list>ul>li>a{font-size: 1.6rem;font-weight: 500;color:#999;line-height: 2.4rem;padding:0 1rem;display:inline-flex;height: 100%;align-items: center;justify-content: center;}
 .mpt_list>ul>li>a.active{position:relative;color:#000;font-weight: 700;}
 .mpt_list>ul>li>a.active::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:0.1rem;background:#000}
 
@@ -182,17 +183,29 @@
     <section class="sticky_top">
         <div class="mpt_list swiper-container">
             <ul class="swiper-wrapper">
-                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)">워랜 버핏</a></li>
-                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)">빌 에크먼</a></li>
-                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)">마이클 버리</a></li>
-                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)">스탠리 드러캔밀러</a></li>
-                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)">론 바론</a></li>  
+                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)" style="width:8rem">워랜 버핏</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)" style="width:8rem">빌 에크먼</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)" style="width:9.4rem">마이클 버리</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)" style="width:13.5rem">스탠리 드러캔밀러</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)" onclick="mptab.on(this)" style="width:7rem">론 바론</a></li>  
             </ul>
         </div>
     </section>
     <section class="sec_bar">
+        <style>
+
+.arrow{max-width:1.6rem;width:100%;height: 1.6rem;}
+.select{display: none; align-items: center;}
+.select_on{display:inline-flex;}
+.select div:first-child{font-size:1.4rem;margin-right: 0.4rem;white-space: nowrap;font-weight: 500;}
+        </style>
         <div class="ac mt26">
-            24년 4분기
+            <div class="select select_on">
+                <div>24년 1분기</div>
+                <div class="arrow">
+                    <img src="img/main/ico_arw_b.png" alt="">
+                </div>
+            </div>
         </div>
         <style>
             .mp_cht_area{max-width:54rem;margin:0 auto}
