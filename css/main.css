@@ -41,7 +41,7 @@
 
 .mp_list>ul>li.swiper-slide-active{padding-top:5rem}
 .mp_list>ul>li.swiper-slide-active>.mp_item{opacity:1;width:15rem;filter:none;overflow:visible}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img::before{display:block;animation:1.6s infinite ease rainbow}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img::before{display:block;animation:1.6s infinite ease rainbow;animation-delay: 0.3s;}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img::after{display:block;}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1;}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s forwards ease ani2;}
