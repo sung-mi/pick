@@ -348,6 +348,28 @@
             i.classList.add('active');
         }
     }
+
+    // main : touch class add
+    const touchClass = {
+        on:function(e){
+            const ringsU = document.querySelector('.mp_list>ul');
+            const ringsL = ringsU.querySelectorAll('li');
+            ringsL.forEach(function(e){
+                e.addEventListener('touchmove',function(e){
+                    touchClass.reset(ringsU);
+                    ringsU.classList.add('touchmove');
+                });
+                e.addEventListener('touchend',function(e){
+                    touchClass.reset(ringsU);
+                    ringsU.classList.add('touchend');
+                })
+            })
+        },
+        reset:function(i){
+            i.classList.remove('touchmove','touchend');
+        }
+    }
+    touchClass.on();
     
 </script>
 
