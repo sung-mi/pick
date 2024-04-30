@@ -49,3 +49,14 @@ html,body{width:100%;height:100%;background:#16171A}
     <div><i class="d"></i><i></i></div>
 </body>
 </html>
+
+.mp_item>.mpi_img>.ring{display:none}
+.ring{position:absolute;display:block;z-index:1;top:-0.8rem;left:-0.8rem;width:calc(100% + 1.6rem);height:calc(100% + 1.6rem);border-radius:13.4rem;overflow:hidden}
+.ring:before{content:'';display:block;animation:2s infinite linear rainbow;width:18rem;height:18rem;position:absolute;top:50%;left:50%;margin-left:-9rem;margin-top:-9rem}
+.ring:after{content:'';font-size:4rem;color:#fff;display:flex;justify-content: center; align-items: center;position:absolute;top:0.2rem;left:0.2rem;width:calc(100% - 0.4rem);height:calc(100% - 0.4rem);background:#16171A;border-radius:13.4rem}
+
+
+@keyframes rainbow{
+    0% {background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%)}
+    100% {transform:rotate(360deg); background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%)}
+}
