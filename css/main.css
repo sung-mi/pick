@@ -21,8 +21,8 @@
 .mp_item>.mpi_img{position:relative;display:block;border-radius:12.8rem}
 .mp_item>.mpi_img>.ring{display:none}
 .ring{position:absolute;display:block;z-index:1;top:-0.8rem;left:-0.8rem;width:calc(100% + 1.6rem);height:calc(100% + 1.6rem);border-radius:13.4rem;overflow:hidden}
-.ring:before{content:'';display:block;animation:2s infinite linear rainbow;width:18rem;height:18rem;position:absolute;top:50%;left:50%;margin-left:-9rem;margin-top:-9rem}
-.ring:after{content:'';font-size:4rem;color:#fff;display:flex;justify-content: center; align-items: center;position:absolute;top:0.2rem;left:0.2rem;width:calc(100% - 0.4rem);height:calc(100% - 0.4rem);background:#16171A;border-radius:13.4rem}
+.ring>i:first-child{display:block;animation:2s infinite linear rainbow;width:18rem;height:18rem;position:absolute;top:50%;left:50%;margin-left:-9rem;margin-top:-9rem}
+.ring>i:last-child{font-size:4rem;color:#fff;display:flex;justify-content: center; align-items: center;position:absolute;top:0.2rem;left:0.2rem;width:calc(100% - 0.4rem);height:calc(100% - 0.4rem);background:#16171A;border-radius:13.4rem}
 .mp_item>.mpi_img>img{display:block;position:relative;z-index:3;width:100%;vertical-align:top;border-radius:13.4rem}
 .mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_tx2,.mpi_more{display:none}
 .mp_item>.mpi_img_tx1{position:absolute;top:-12.8rem;left:50%;height:12.8rem;z-index:3;width:15.5rem}
@@ -72,7 +72,7 @@
 .mp_item>.mpi_tx2>i::after{content:'';position:absolute;top:0.2rem;right:0;width:1.6rem;height:1.2rem;background:url(../img/main/img_tx4_r.png) 0 0 no-repeat;background-size:100% auto}
 .mp_item>.mpi_more{font-size: 1.4rem;font-weight:500;line-height: 2rem; color:#666;margin-top:0.6rem;opacity:0}
 
-.mp_list>ul>li.swiper-slide-active>.mp_item{padding-top:4.8rem;overflow:visible;-webkit-animation:1s forwards ease ani4}
+.mp_list>ul>li.swiper-slide-active>.mp_item{padding-top:4.8rem;overflow:visible;animation:1s forwards ease ani4}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring{display:block}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s backwards ease ani2}
