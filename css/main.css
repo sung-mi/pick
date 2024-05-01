@@ -75,9 +75,9 @@
 .mp_list{height:100%}
 .mp_list>ul>li.swiper-slide-active>.mp_item{padding-top:4.8rem;overflow:visible;animation:1s forwards ease ani4}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring{display:block}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow;animation-delay:2s}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow}
 .mp_list>ul.touchmove>li>.mp_item>.mpi_img>.ring>i:first-child{animation:none}
-.mp_list>ul.touchend>li>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow;animation-delay:2s}
+.mp_list>ul.touchend>li>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s backwards ease ani2}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx3{display:block;animation:0.3s backwards ease ani3}
