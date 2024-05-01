@@ -72,11 +72,12 @@
 .mp_item>.mpi_tx2>i::after{content:'';position:absolute;top:0.2rem;right:0;width:1.6rem;height:1.2rem;background:url(../img/main/img_tx4_r.png) 0 0 no-repeat;background-size:100% auto}
 .mp_item>.mpi_more{font-size: 1.4rem;font-weight:500;line-height: 2rem; color:#666;margin-top:0.6rem;opacity:0}
 
+.mp_list{height:100%}
 .mp_list>ul>li.swiper-slide-active>.mp_item{padding-top:4.8rem;overflow:visible;animation:1s forwards ease ani4}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring{display:block}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow;animation-delay:2s}
-.mp_list>ul.touchmove>li>.mp_item>.mpi_img>.ring>i:first-child{animation-play-state:paused}
-.mp_list>ul.touchend>li>.mp_item>.mpi_img>.ring>i:first-child{animation-play-state:running}
+.mp_list>ul.touchmove>li>.mp_item>.mpi_img>.ring>i:first-child{animation:none}
+.mp_list>ul.touchend>li>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow;animation-delay:2s}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s backwards ease ani2}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx3{display:block;animation:0.3s backwards ease ani3}
