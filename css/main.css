@@ -21,8 +21,8 @@
 .mp_item>.mpi_img{position:relative;display:block;border-radius:12.8rem;z-index:1}
 .mp_item>.mpi_img>.ring{display:none}
 .ring{position:absolute;display:block;z-index:1;top:-0.8rem;left:-0.8rem;width:calc(100% + 1.6rem);height:calc(100% + 1.6rem);border-radius:13.4rem;overflow:hidden}
-.ring>i:first-child{display:block;width:18rem;height:18rem;position:absolute;top:50%;left:50%;margin-left:-9rem;margin-top:-9rem; background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%)}
-.ring>i:last-child{font-size:4rem;color:#fff;display:flex;justify-content: center; align-items: center;position:absolute;top:0.2rem;left:0.2rem;width:calc(100% - 0.4rem);height:calc(100% - 0.4rem);background:#16171A;border-radius:13.4rem}
+.ring:before{content:'';display:block;width:18rem;height:18rem;position:absolute;top:50%;left:50%;margin-left:-9rem;margin-top:-9rem; background-image:-webkit-linear-gradient(-65deg, #D5FD00 5%, #85F3FB 25%, #E85F9E 60%, #FAE365 80%)}
+.ring:after{content:'';font-size:4rem;color:#fff;display:flex;justify-content: center; align-items: center;position:absolute;top:0.2rem;left:0.2rem;width:calc(100% - 0.4rem);height:calc(100% - 0.4rem);background:#16171A;border-radius:13.4rem}
 .mp_item>.mpi_img>img{display:block;position:relative;z-index:3;width:100%;vertical-align:top;border-radius:13.4rem}
 .mp_item>.mpi_img_tx1,.mp_item>.mpi_img_tx2, .mp_item>.mpi_img_tx3,.mp_item>.mpi_tx2,.mpi_more{display:none}
 .mp_item>.mpi_img_tx1{position:absolute;top:-12.8rem;left:50%;height:12.8rem;z-index:3;width:15.5rem}
@@ -75,9 +75,9 @@
 .mp_list{height:100%}
 .mp_list>ul>li.swiper-slide-active>.mp_item{padding-top:4.8rem;overflow:visible;animation:1s forwards ease ani4}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring{display:block}
-.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow;}
-.mp_list>ul.touchmove>li>.mp_item>.mpi_img>.ring>i:first-child{animation:none}
-.mp_list>ul.touchend>li>.mp_item>.mpi_img>.ring>i:first-child{animation:2s infinite linear rainbow}
+.mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring:before{animation:2s infinite linear rainbow;}
+.mp_list>ul.touchmove>li>.mp_item>.mpi_img>.ring:before{animation:none}
+.mp_list>ul.touchend>li>.mp_item>.mpi_img>.ring:before{animation:2s infinite linear rainbow}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx1{display:block;animation:1s forwards ease ani1}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx2{display:block;animation:0.3s backwards ease ani2}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_img_tx3{display:block;animation:0.3s backwards ease ani3}
@@ -86,8 +86,8 @@
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_more{display:block;opacity:1}
 
 /* ios trasnform bug solution */
-.mp_list.swiper-container-ios>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child,
-.mp_list.swiper-container-ios>ul.touchend>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child{animation-delay:2s}
+.mp_list.swiper-container-ios>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring:before,
+.mp_list.swiper-container-ios>ul.touchend>li.swiper-slide-active>.mp_item>.mpi_img>.ring:before{animation-delay:2s}
 
 @keyframes rainbow{
     100% {transform:rotate(360deg)}
