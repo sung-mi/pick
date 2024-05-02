@@ -85,6 +85,7 @@
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_tx2{display:block;opacity:1}
 .mp_list>ul>li.swiper-slide-active>.mp_item>.mpi_more{display:block;opacity:1}
 
+/* ios trasnform bug solution */
 .mp_list.swiper-container-ios>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child,
 .mp_list.swiper-container-ios>ul.touchend>li.swiper-slide-active>.mp_item>.mpi_img>.ring>i:first-child{animation-delay:2s}
 
