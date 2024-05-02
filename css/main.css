@@ -87,7 +87,7 @@
 
 /* ios trasnform bug solution */
 .mp_list.swiper-container-ios>ul>li.swiper-slide-active>.mp_item>.mpi_img>.ring:before,
-.mp_list.swiper-container-ios>ul.touchend>li.swiper-slide-active>.mp_item>.mpi_img>.ring:before{animation-delay:2s}
+.mp_list.swiper-container-ios>ul.touchend>li.swiper-slide-active>.mp_item>.mpi_img>.ring:before{animation-delay:1s}
 
 @keyframes rainbow{
     100% {transform:rotate(360deg)}
